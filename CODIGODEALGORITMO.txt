@@ -1,0 +1,37 @@
+Console.WriteLine ("Diga su nombre");
+String nombre = Console.ReadLine();
+do{
+
+    Console.WriteLine ("Diga su color favorito");
+
+    Console.WriteLine( "1. amarillo");
+    Console.WriteLine( "2. rosado");
+    Console.WriteLine( "3. morado");
+    Console.WriteLine( "4. naranjado");
+    Console.WriteLine( "5. rojo");
+    Console.WriteLine( "6. salir");
+    colorfavorito = Convert.ToInt32(Console.ReadLine());
+    switch (colorfavorito)
+    {
+        case 1:
+        Console.WriteLine(nombre + "amarillo");
+        break;
+             case 2:
+             Console.WriteLine(nombre + "rosado");
+        break;
+             case 3:
+             Console.WriteLine(nombre + "morado");
+        break;
+             case 4:
+             Console.WriteLine(nombre + "naranjado");
+        break;
+             case 5:
+             Console.WriteLine(nombre + "rojo");
+        break;
+             case 6:
+             Console.WriteLine(nombre + "salir");
+        break;
+         }
+         
+        }while (colorfavorito!=6);
+        
